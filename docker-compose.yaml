@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+  pg:
+    image: postgres:15
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: uuid
+      POSTGRES_PASSWORD: uuid-secret
+      TZ: Asia/Tokyo
+  mysql:
+    image: mysql:latest
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: uuid-secret
+      MYSQL_DATABASE: uuid
+      TZ: "Asia/Tokyo"

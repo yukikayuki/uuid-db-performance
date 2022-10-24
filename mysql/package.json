@@ -1,0 +1,27 @@
+{
+  "name": "mysql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "migrate": "prisma migrate dev",
+    "bench": "ts-node benchmark_uuid_v4.ts",
+    "bench_v7": "ts-node benchmark_uuid_v7.ts",
+    "fmt": "prettier --write ./*.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.11.3",
+    "@types/uuid": "^8.3.4",
+    "prettier": "^2.7.1",
+    "prisma": "^4.5.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "@kripod/uuidv7": "^0.3.4",
+    "@prisma/client": "^4.5.0",
+    "uuid": "^9.0.0"
+  }
+}
